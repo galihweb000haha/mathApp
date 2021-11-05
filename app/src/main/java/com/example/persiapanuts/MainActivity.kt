@@ -38,7 +38,20 @@ class MainActivity : AppCompatActivity() {
             "Deret aritmatika adalah penjumlahan suku-suku dari suatu barisan aritmatika. Penjumlahan dari suku-suku petama sampai suku ke-n" +
                     "Jika hendak membuat sebuah baris aritmatika dengan telah diketahui nilai suku pertama (a) dan suku terakhirnya (p), dapat disisipkan sejumlah bilangan diantara keduan bilangan tersebut. " +
                     "Sejumlah bilangan (q buah) tersebut menjadi suku-suku baris aritmatika dan memiliki selisih antar suku beredekatan (b)."))
-
+        data?.add(DataModel(R.drawable.icon,"Deret Aritmatika",R.drawable.rumus_trigonometri,
+            "Trigonometri adalah ilmu matematika yang mempelajari tentang sudut, sisi, dan perbandingan " +
+                    "antara sudut terhadap sisi. Dasarnya menggunakan bangun datar segitiga. Hal ini karena arti dari kata " +
+                    "trigonometri sendiri yang dalam bahasa Yunani yang berarti ukuran-ukuran dalam sudut tiga atau segitiga."))
+        data?.add(DataModel(R.drawable.icon,"Sistem Persamaan Dua Variable",R.drawable.rumus_spldv,
+            "Sistem persamaan linear dua variabel atau dalam matematika biasa disingkat SPLDV " +
+                    "adalah suatu persamaan matematika yang terdiri atas dua persamaan linear, yang masing-masing " +
+                    "bervariabel dua, misalnya variabel x dan variabel y." +
+                    "SPLDV juga ada fungsinya loh dalam menyelesaikan kejadian di kehidupan kita. " +
+                    "Seperti menghitung keuntungan atau laba, mencari harga dasar atau harga pokok suatu barang," +
+                    " dan membandingkan harga barang.\n" +
+                    "\n" +
+                    "Nah, sebelum masuk ke rumus dan metode, kita tentunya harus paham unsur-unsur yang ada " +
+                    "pada sistem persamaan linear dua variabel."))
         //Set data to Adapter
         recyclerview.adapter = DataAdapter(data, object : DataAdapter.OnClickListener{
             override fun detail(item: DataModel?) {
